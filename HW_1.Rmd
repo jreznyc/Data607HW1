@@ -62,7 +62,7 @@ for(i in names(df[3:23])) {
 df2 <- df[c('class', 'odor', 'gill.color', 'gill.size','spore.print.color')]
 df2$odor <- revalue(df$odor, c("a"="almond","l"="anise","c"="creosote","y"="fishy","f"="foul","m"="musty","n"="none","p"="pungent","s"="spicy"))
 df2$gill.color <- revalue(df$gill.color, c("k"="black","n"="brown","b"="buff","h"="chocolate","g"="gray", "r"="green","o"="orange","p"="pink","u"="purple","e"="red","w"="white","y"="yellow"))
-df2$gill.size <- revalue(df$gill.color, c("b"="broad","n"="narrow"))
+df2$gill.size <- revalue(df$gill.size, c("b"="broad","n"="narrow"))
 df2$spore.print.color <- revalue(df$spore.print.color, c("k"="black","n"="brown","b"="buff","h"="chocolate","g"="gray", "r"="green","o"="orange","p"="pink","u"="purple","e"="red","w"="white","y"="yellow"))
 colnames(df2) <- c('Class', 'Odor', 'Gill Color', 'Gill Size', 'Spore Print Color')
 head(df2)
